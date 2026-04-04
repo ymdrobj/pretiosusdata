@@ -4,6 +4,7 @@
   --text: #222;
   --bg: #fff;
   --accent: #555;
+  --link: #0969da;
   --border: #ccc;
   --code-bg: #f5f5f5;
 }
@@ -43,7 +44,7 @@ nav {
 }
 
 nav a {
-  color: var(--accent);
+  color: var(--link);
   text-decoration: none;
   margin-right: 1rem;
   font-size: 0.9rem;
@@ -65,7 +66,7 @@ h3 { font-size: 0.95rem; margin: 1rem 0 0.3rem; }
 
 p { margin-bottom: 1rem; }
 
-a { color: var(--text); }
+a { color: var(--link); }
 
 /* post list */
 .post-list {
