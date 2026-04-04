@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Meta on pretiosusdata</title>
+    <link>http://localhost:1313/tags/meta/</link>
+    <description>Recent content in Meta on pretiosusdata</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 02 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/meta/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sample note — delete this</title>
+      <link>http://localhost:1313/notes/sample-note/</link>
+      <pubDate>Thu, 02 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/notes/sample-note/</guid>
+      <description>&lt;p&gt;This is a placeholder to verify the site renders correctly. Delete this file once you&amp;rsquo;ve confirmed everything works.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-notes-look-like&#34;&gt;What notes look like&lt;/h2&gt;&#xA;&lt;p&gt;Short TIL-style posts. 200-500 words. A gotcha you hit, a pattern that worked, a thing you figured out. No preamble, no conclusion paragraph, just the useful bit.&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;-- example code block&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00a8c8&#34;&gt;SELECT&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#00a8c8&#34;&gt;FROM&lt;/span&gt; &lt;span style=&#34;color:#111&#34;&gt;iceberg_table&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#00a8c8&#34;&gt;WHERE&lt;/span&gt; &lt;span style=&#34;color:#111&#34;&gt;_hoodie_commit_time&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#00a8c8&#34;&gt;current_timestamp&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color:#111&#34;&gt;interval&lt;/span&gt; &lt;span style=&#34;color:#d88200&#34;&gt;&amp;#39;1&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#00a8c8&#34;&gt;day&lt;/span&gt;&lt;span style=&#34;color:#111&#34;&gt;;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;That&amp;rsquo;s it.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

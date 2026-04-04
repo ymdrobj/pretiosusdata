@@ -1,0 +1,36 @@
+baseURL = "https://pretiosusdata.com/"
+languageCode = "en-us"
+title = "pretiosusdata"
+theme = ""
+
+[params]
+  author = "Yaniv Mor"
+  description = "Working notes on data platforms, architecture, and strategy."
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = false
+  [markup.highlight]
+    style = "monokailight"
+    lineNos = false
+
+[outputs]
+  home = ["HTML", "RSS"]
+
+[taxonomies]
+  tag = "tags"
+
+[menus]
+  [[menus.main]]
+    name = "notes"
+    url = "/notes/"
+    weight = 1
+  [[menus.main]]
+    name = "references"
+    url = "/references/"
+    weight = 2
+  [[menus.main]]
+    name = "about"
+    url = "/about/"
+    weight = 3

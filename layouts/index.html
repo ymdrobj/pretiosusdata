@@ -1,0 +1,14 @@
+{{ define "main" }}
+<p>{{ .Site.Params.description }}</p>
+<hr>
+{{ $notes := where .Site.RegularPages "Section" "notes" }}
+{{ $refs := where .Site.RegularPages "Section" "references" }}
+{{ $all := union $notes $refs }}
+{{ range ($all.ByDate.Reverse) }}
+<div style="margin-bottom: 0.6rem;">
+  <span class="post-date">{{ .Date.Format "2006-01-02" }}</span>
+  <span class="tags">[{{ .Section }}]</span>
+  <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+</div>
+{{ end }}
+{{ end }}
