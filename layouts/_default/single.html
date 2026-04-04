@@ -2,17 +2,21 @@
 <article>
   <div class="post-header">
     <h1>{{ .Title }}</h1>
+    {{ if not .Date.IsZero }}
     <div class="post-meta">
       {{ .Date.Format "2006-01-02" }}
       {{ with .Params.tags }}
       · {{ range $i, $t := . }}{{ if $i }}, {{ end }}<a href="/tags/{{ $t | urlize }}/">{{ $t }}</a>{{ end }}
       {{ end }}
     </div>
+    {{ end }}
   </div>
   <div class="post-content">
     {{ .Content }}
   </div>
 </article>
+{{ if .Section }}
 <hr>
 <p><a href="/{{ .Section }}/">← back to {{ .Section }}</a></p>
+{{ end }}
 {{ end }}
