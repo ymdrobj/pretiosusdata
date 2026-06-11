@@ -13,11 +13,11 @@ Eleven nines answers exactly one question: will AWS lose your bytes? No. Store t
 
 Because nobody loses data to AWS. You lose data to yourself.
 
-A pipeline overwrites good partitions with garbage — the write succeeds, and the garbage is now eleven-nines durable. Someone deletes a prefix that "looked stale." A leaked key runs `DeleteObject` all night. The durability SLA sleeps through all of it. It insures the one failure nobody was worried about.
+A pipeline overwrites good partitions with garbage - the write succeeds, and the garbage is now eleven-nines durable. Someone deletes a prefix that "looked stale." A leaked key runs `DeleteObject` all night. The durability SLA sleeps through all of it. It insures the one failure nobody was worried about.
 
-DR is the opposite question: when you break it — and it will be you — how fast do you recover, and to what point in time?
+DR is the opposite question: when you break it - and it will be you - how fast do you recover, and to what point in time?
 
-So: versioning, because deletes should be undoable. Replication to a *separate account* — same-account replication just copies your compromise at high fidelity. A backup vault with a lock, so an admin key can't torch it. And a restore you've actually run. An untested restore isn't a restore. It's a prayer.
+So: versioning, because deletes should be undoable. Replication to a *separate account* - same-account replication just copies your compromise at high fidelity. A backup vault with a lock, so an admin key can't torch it. And a restore you've actually run. An untested restore isn't a restore. It's a prayer.
 
 The storage-layer assessment didn't ask "is the data safe?" It is. It asked for an RTO and an RPO per failure mode. That's when there was something real to write.
 
