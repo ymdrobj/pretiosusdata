@@ -45,12 +45,20 @@ Same process, longer format.
 ## Publish
 
 ```bash
-git add .
+git status --short --branch
+hugo --minify
+git add content/notes/my-topic.md
+git diff --cached
 git commit -m "note: my topic"
-git push
+git push origin main
 ```
 
-Cloudflare Pages auto-deploys on push.
+Run this from an up-to-date `main` checkout. Replace the article path with the
+approved note or reference and include any associated assets explicitly.
+GitHub Pages auto-deploys on push through `.github/workflows/hugo-deploy.yml`.
+Wait for the matching commit's [deployment run](https://github.com/ymdrobj/pretiosusdata/actions/workflows/hugo-deploy.yml)
+to succeed and verify the live article. The workflow can also be run manually
+from GitHub Actions on `main`.
 
 ## Front matter format
 
